@@ -1,0 +1,9 @@
+name: Workflow Dorian Mikolajczyk
+on: [push]
+jobs:
+  Test-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Python--version
+      - name: Check out repository code
+        uses: actions/checkout@v3
